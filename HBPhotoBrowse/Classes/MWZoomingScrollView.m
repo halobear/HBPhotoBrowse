@@ -252,7 +252,7 @@
     if (_photoImageView.image == nil) return;
     
     // Reset position
-    if (kDevice_Is_iPhoneX && _isMultiPic) {
+    if (_isMultiPic) {
         _photoImageView.frame = CGRectMake(0, 0, _photoImageView.frame.size.width, _photoImageView.frame.size.height-200);
     }else{
         _photoImageView.frame = CGRectMake(0, 0, _photoImageView.frame.size.width, _photoImageView.frame.size.height);
